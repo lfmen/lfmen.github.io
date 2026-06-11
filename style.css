@@ -140,16 +140,18 @@ ul { list-style: none; }
 #hero {
     position: relative; min-height: 100vh;
     padding-top: var(--nav-h);
-    display: flex; align-items: center;
+    padding-bottom: var(--nav-h); /* compensa el nav para que el centro visual sea correcto */
+    display: flex;
+    align-items: center;
 }
 .hero-inner {
-    max-width: var(--max-w); margin: 0 auto; padding: 3rem 2rem;
+    max-width: var(--max-w); margin: 0 auto; padding: 0 2rem;
     width: 100%; display: grid;
     grid-template-columns: 1fr;
     gap: 3.5rem; align-items: center;
 }
 @media (min-width: 900px) {
-    .hero-inner { grid-template-columns: 1fr 1.05fr; padding: 4rem 2rem; }
+    .hero-inner { grid-template-columns: 1fr 1.05fr; padding: 0 2rem; }
 }
 
 /* Texto */
@@ -633,7 +635,7 @@ body, #navbar, #habilidades, .skill-list li,
         text-align: left;
     }
 
-    #hero { min-height: auto; padding-bottom: 4rem; }
+    #hero { min-height: auto; padding-bottom: 3rem; }
 
     .hero-title {
         font-size: clamp(2.4rem, 11vw, 3.5rem);
