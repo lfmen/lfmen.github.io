@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luca Mengarelli — Ciencia de Datos</title>
+    <meta name="description" content="Portfolio de Luca Franco Mengarelli, estudiante de Licenciatura en Ciencia de Datos en UNR.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=EB+Garamond:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- BARRA DE PROGRESO -->
+    <div id="progress-bar"></div>
+
+    <!-- NAV -->
+    <nav id="navbar">
+        <div class="nav-inner">
+            <div class="nav-logo">Luca Mengarelli</div>
+            <div class="nav-links">
+                <a href="#habilidades" class="nav-link" data-section="habilidades">Stack</a>
+                <a href="#proyectos"   class="nav-link" data-section="proyectos">Proyectos</a>
+                <a href="#contacto"    class="nav-link" data-section="contacto">Contacto</a>
+            </div>
+
+        </div>
+    </nav>
+
+    <!-- INDICADOR DE SECCIÓN (puntos laterales) -->
+    <nav id="section-dots" aria-label="Secciones">
+        <a href="#hero"        class="dot active" data-label="Inicio"    title="Inicio"></a>
+        <a href="#habilidades" class="dot"         data-label="Stack"     title="Stack"></a>
+        <a href="#proyectos"   class="dot"         data-label="Proyectos" title="Proyectos"></a>
+        <a href="#contacto"    class="dot"         data-label="Contacto"  title="Contacto"></a>
+    </nav>
+
+    <main>
+
+        <!-- HERO -->
+        <section id="hero" data-dot="0">
+            <div class="hero-inner">
+
+                <!-- Texto -->
+                <div class="hero-content">
+                    <span class="eyebrow">Rosario, Argentina · UNR FCEYE</span>
+                    <h1 class="hero-title">
+                        Luca Franco<br>
+                        <span class="title-muted">Mengarelli.</span>
+                    </h1>
+                    <p class="hero-role">Lic. Ciencia de Datos &mdash; 1.° año</p>
+                    <p class="hero-sub">
+                        Me apasiona la inteligencia artificial y el machine learning.
+                        Disfruto entender los datos, construir modelos y buscar la forma
+                        más limpia de explicar lo que muestran.
+                    </p>
+
+                    <!-- Chips de info rápida -->
+                    <div class="hero-chips">
+                        <span class="chip">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4 2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.82a16 16 0 0 0 6 6l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7a2 2 0 0 1 1.72 2.04z"/></svg>
+                            Disponible para colaborar
+                        </span>
+                        <span class="chip">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                            2025
+                        </span>
+                        <span class="chip">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                            Aprendiendo activamente
+                        </span>
+                    </div>
+
+                    <div class="hero-cta">
+                        <a href="#proyectos" class="btn-primary">Ver proyectos</a>
+                        <a href="#contacto" class="btn-ghost">
+                            Contacto
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="arrow-icon"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Computadora 3D -->
+                <div class="computer-col">
+                    <div class="scene" id="scene">
+                        <div class="computer-unit">
+                            <div class="face front">
+                                <div class="screen-inset">
+                                    <div class="crt">
+                                        <div class="crt-glow">
+                                            <div class="crt-ui">
+                                                <div class="crt-sidebar">
+                                                    <div class="icon-list">
+                                                        <div><span class="icon-dot blue"></span> RStudio</div>
+                                                        <div><span class="icon-dot orange"></span> Datos</div>
+                                                        <div><span class="icon-dot"></span> Modelos</div>
+                                                        <div><span class="icon-dot"></span> Plots</div>
+                                                    </div>
+                                                </div>
+                                                <div class="crt-main">
+                                                    <div class="crt-label">R 4.4.0</div>
+                                                    <div class="crt-window">
+                                                        <div class="crt-window-header">
+                                                            <span>analysis.Rmd</span>
+                                                            <span>[x]</span>
+                                                        </div>
+                                                        <div class="typing-container">
+                                                            <span id="typewriter"></span><span class="cursor"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="floppy-slot"></div>
+                                <div class="logo-badge"></div>
+                                <div class="grill">
+                                    <div class="vent"></div><div class="vent"></div>
+                                    <div class="vent"></div><div class="vent"></div>
+                                    <div class="vent"></div><div class="vent"></div>
+                                    <div class="vent"></div><div class="vent"></div>
+                                </div>
+                            </div>
+                            <div class="face back"></div>
+                            <div class="face left"></div>
+                            <div class="face right"></div>
+                            <div class="face top"></div>
+                            <div class="face bottom"></div>
+                            <div class="keyboard-assembly">
+                                <div class="kb-base">
+                                    <div class="keys-grid">
+                                        <div class="key"></div><div class="key"></div><div class="key"></div><div class="key"></div>
+                                        <div class="key"></div><div class="key"></div><div class="key"></div><div class="key"></div>
+                                        <div class="key"></div><div class="key"></div><div class="key"></div><div class="key"></div>
+                                        <div class="key wide"></div><div class="key"></div><div class="key"></div><div class="key"></div>
+                                        <div class="key"></div><div class="key"></div><div class="key"></div><div class="key"></div>
+                                        <div class="key wide"></div>
+                                        <div class="key"></div><div class="key"></div><div class="key space"></div>
+                                        <div class="key"></div><div class="key"></div><div class="key"></div>
+                                    </div>
+                                </div>
+                                <div class="kb-front"></div>
+                                <div class="kb-back"></div>
+                                <div class="kb-left"></div>
+                                <div class="kb-right"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Flecha scroll -->
+            <div class="scroll-hint" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+            </div>
+        </section>
+
+        <!-- SOBRE MÍ / EDUCACIÓN -->
+        <section id="habilidades" data-dot="1">
+            <div class="container">
+
+                <!-- Educación -->
+                <div class="edu-row">
+                    <div class="edu-left">
+                        <p class="section-label">Educación</p>
+                        <h2 class="edu-title">Licenciatura en<br>Ciencia de Datos</h2>
+                        <p class="edu-sub">Universidad Nacional de Rosario &mdash; FCEyE<br>
+                        <span class="edu-year">2025 &ndash; presente &nbsp;·&nbsp; 1.° año</span></p>
+                    </div>
+                    <div class="edu-right">
+                        <p class="edu-body">
+                            Carrera orientada al análisis estadístico, modelado predictivo y visualización de información. Me interesa especialmente la intersección entre la estadística y las técnicas modernas de machine learning.
+                        </p>
+                        <div class="edu-tags">
+                            <span class="etag">Estadística</span>
+                            <span class="etag">Álgebra lineal</span>
+                            <span class="etag">Programación</span>
+                            <span class="etag">Análisis de datos</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section-divider"></div>
+
+                <!-- Stack -->
+                <div class="skills-grid">
+                    <div class="skills-intro">
+                        <p class="section-label">Stack técnico</p>
+                        <p class="skills-desc">
+                            Construyendo una base sólida en análisis estadístico, visualización de datos y programación.
+                        </p>
+                    </div>
+                    <div class="skills-cols">
+                        <div class="skill-group">
+                            <h3 class="skill-group-title">Lenguajes</h3>
+                            <ul class="skill-list">
+                                <li>R</li>
+                                <li>R Markdown</li>
+                                <li>Python <span class="skill-note">(básico)</span></li>
+                                <li>Bash / Shell</li>
+                            </ul>
+                        </div>
+                        <div class="skill-group">
+                            <h3 class="skill-group-title">Herramientas</h3>
+                            <ul class="skill-list">
+                                <li>Git &amp; GitHub</li>
+                                <li>RStudio</li>
+                                <li>Linux</li>
+                                <li>ggplot2 / tidyverse</li>
+                            </ul>
+                        </div>
+                        <div class="skill-group">
+                            <h3 class="skill-group-title">Intereses</h3>
+                            <ul class="skill-list">
+                                <li>Machine Learning</li>
+                                <li>Inteligencia Artificial</li>
+                                <li>Estadística aplicada</li>
+                                <li>Open source</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- PROYECTOS -->
+        <section id="proyectos" data-dot="2">
+            <div class="container">
+                <p class="section-label">Proyectos</p>
+
+                <!-- Proyecto 1 -->
+                <div class="project-block">
+                    <div class="project-info">
+                        <div class="project-meta-row">
+                            <span class="project-year">2025</span>
+                            <span class="project-type">Open source · herramienta</span>
+                        </div>
+                        <h3 class="project-title">TheftDeterrent</h3>
+                        <p class="project-desc">
+                            Instalador automatizado para ejecutar el software antirrobo del Plan Juana Manso / Conectar Igualdad en distribuciones Linux modernas. Resuelve incompatibilidades de dependencias que inutilizaban el software en sistemas actuales.
+                        </p>
+                        <p class="project-detail">
+                            El proyecto nació de la necesidad concreta: el software oficial no corría en ninguna distro moderna. La solución consistió en reempaquetar las dependencias con versiones compatibles y automatizar la instalación con un script Bash.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Bash</span>
+                            <span class="tag">Linux</span>
+                            <span class="tag">Packaging</span>
+                            <span class="tag">Dependencias</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/lfmen/TheftDeterrent" target="_blank" rel="noopener" class="link-underline">
+                                Ver en GitHub
+                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-number" aria-hidden="true">01</div>
+                </div>
+
+                <div class="project-divider"></div>
+
+                <!-- Proyecto 2 -->
+                <div class="project-block">
+                    <div class="project-info">
+                        <div class="project-meta-row">
+                            <span class="project-year">2025</span>
+                            <span class="project-type">Trabajo práctico · algorítmica</span>
+                        </div>
+                        <h3 class="project-title">Farkle TP</h3>
+                        <p class="project-desc">
+                            Implementación del juego de dados Farkle como trabajo práctico universitario. Lógica del juego completa: manejo de turnos, puntuación, detección de combinaciones ganadoras y partidas entre jugadores.
+                        </p>
+                        <p class="project-detail">
+                            Desarrollado en R, con foco en la corrección algorítmica y la claridad del código. Fue uno de los primeros proyectos donde apliqué estructuras de control complejas y funciones recursivas.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">R</span>
+                            <span class="tag">Algorítmica</span>
+                            <span class="tag">TP universitario</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/lfmen/farkle-tp" target="_blank" rel="noopener" class="link-underline">
+                                Ver en GitHub
+                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-number" aria-hidden="true">02</div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CONTACTO -->
+        <section id="contacto" data-dot="3">
+            <div class="container">
+                <p class="section-label">Contacto</p>
+                <a href="mailto:lucafrancomengarelli@gmail.com" class="contact-email">
+                    lucafrancomengarelli@gmail.com
+                </a>
+                <div class="divider"></div>
+
+                <footer class="site-footer">
+                    <div class="footer-social">
+                        <p class="footer-label">En la red</p>
+                        <div class="footer-links">
+                            <a href="https://github.com/lfmen" target="_blank" rel="noopener">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="footer-right">
+                        <p class="footer-year">Portfolio 2025</p>
+                        <p class="footer-note">Luca Franco Mengarelli · UNR</p>
+                    </div>
+                </footer>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+    // ── Barra de progreso de scroll ──────────────────────────────
+    const bar = document.getElementById('progress-bar');
+    window.addEventListener('scroll', () => {
+        const pct = window.scrollY / (document.body.scrollHeight - window.innerHeight) * 100;
+        bar.style.width = Math.min(pct, 100) + '%';
+    }, { passive: true });
+
+    // ── Puntos de sección activos ─────────────────────────────────
+    const sections = document.querySelectorAll('section[data-dot]');
+    const dots     = document.querySelectorAll('#section-dots .dot');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    const io = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const idx = entry.target.dataset.dot;
+                dots.forEach((d, i) => d.classList.toggle('active', i == idx));
+                // Highlight nav link
+                navLinks.forEach(l => l.classList.remove('active'));
+                const id = entry.target.id;
+                const match = document.querySelector(`.nav-link[data-section="${id}"]`);
+                if (match) match.classList.add('active');
+            }
+        });
+    }, { threshold: 0.4 });
+    sections.forEach(s => io.observe(s));
+
+    // ── Typewriter en pantalla CRT ────────────────────────────────
+    const lines = [
+        'library(tidyverse)',
+        'df <- read_csv("data.csv")',
+        'glimpse(df)',
+        'ggplot(df, aes(x, y)) +',
+        '  geom_point(alpha=.6) +',
+        '  theme_minimal()',
+    ];
+    let li = 0, ci = 0;
+    const tw = document.getElementById('typewriter');
+    function type() {
+        if (ci < lines[li].length) {
+            tw.textContent += lines[li][ci++];
+            setTimeout(type, 75 + Math.random() * 45);
+        } else {
+            setTimeout(() => {
+                tw.textContent += '\n';
+                li = (li + 1) % lines.length;
+                ci = 0;
+                if (li === 0) setTimeout(() => { tw.textContent = ''; type(); }, 2000);
+                else type();
+            }, 600);
+        }
+    }
+    window.addEventListener('load', type);
+
+    // ── Parallax en la computadora ────────────────────────────────
+    const scene = document.getElementById('scene');
+    document.addEventListener('mousemove', e => {
+        if (!scene) return;
+        const rx = ((e.clientY - window.innerHeight / 2) / window.innerHeight) * 7;
+        const ry = -((e.clientX - window.innerWidth  / 2) / window.innerWidth)  * 12;
+        scene.style.transform = `rotateY(${-15 + ry}deg) rotateX(${5 + rx}deg)`;
+    });
+    </script>
+</body>
+</html>
