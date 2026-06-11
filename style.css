@@ -162,8 +162,8 @@ ul { list-style: none; }
     font-weight: 300; letter-spacing: -.05em; line-height: 1.0;
     margin-bottom: .6rem; color: var(--s950);
 }
-/* Apellido más visible: s500 en vez de s300 */
-.title-muted { color: var(--s500); }
+/* Apellido: gris cálido y legible */
+.title-muted { color: #a2aab6; }
 
 .hero-role {
     font-size: .875rem; font-weight: 400; color: var(--s500);
@@ -180,21 +180,21 @@ ul { list-style: none; }
 }
 .chip {
     display: inline-flex; align-items: center; gap: .4rem;
-    font-size: .7rem; font-weight: 400; color: var(--s500);
-    background: var(--s50); border: 1px solid var(--s100);
+    font-size: .7rem; font-weight: 400; color: #9aa2ae;
+    background: #f6f7f9; border: 1px solid #e8eaed;
     padding: .3rem .75rem; border-radius: 9999px;
 }
-.chip svg { color: var(--s400); flex-shrink: 0; }
+.chip svg { color: #b0b8c4; flex-shrink: 0; }
 
 /* CTA */
 .hero-cta { display: flex; align-items: center; gap: 1.25rem; flex-wrap: wrap; }
 .btn-primary {
-    display: inline-block; background: var(--s900); color: #fff;
+    display: inline-block; background: #6b7685; color: #fff;
     padding: .8rem 1.75rem; border-radius: 9999px;
     font-size: .875rem; font-weight: 500;
     transition: background .2s, transform .2s;
 }
-.btn-primary:hover { background: var(--s600); transform: translateY(-1px); }
+.btn-primary:hover { background: #57606d; transform: translateY(-1px); }
 .btn-ghost {
     display: inline-flex; align-items: center; gap: .5rem;
     font-size: .875rem; font-weight: 400; color: var(--s500); transition: color .15s;
