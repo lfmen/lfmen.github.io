@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luca Mengarelli · Ciencia de Datos</title>
+    <meta name="description" content="Portfolio de Luca Franco Mengarelli, estudiante de Licenciatura en Ciencia de Datos en UNR.">
+    
+    <!-- Open Graph / Redes Sociales -->
+    <meta property="og:title" content="Luca Mengarelli · Ciencia de Datos">
+    <meta property="og:description" content="Portfolio de Luca Franco Mengarelli, estudiante de Licenciatura en Ciencia de Datos en UNR.">
+    <meta property="og:image" content="https://lfmen.github.io/og-image.png">
+    <meta property="og:url" content="https://lfmen.github.io/">
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=EB+Garamond:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=5">
+</head>
+<body>
+
+    <!-- BARRA DE PROGRESO -->
+    <div id="progress-bar"></div>
+
+    <!-- NAV -->
+    <nav id="navbar">
+        <div class="nav-inner">
+            <div class="nav-logo">Luca Mengarelli</div>
+            <div class="nav-links">
+                <a href="#habilidades" class="nav-link" data-section="habilidades">Stack & Formación</a>
+                <a href="#proyectos"   class="nav-link" data-section="proyectos">Proyectos</a>
+                <a href="#contacto"    class="nav-link" data-section="contacto">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- INDICADOR DE SECCIÓN (puntos laterales) -->
+    <nav id="section-dots" aria-label="Secciones">
+        <a href="#hero"        class="dot active" data-label="Inicio"    title="Inicio"></a>
+        <a href="#habilidades" class="dot"         data-label="Stack"     title="Stack & Formación"></a>
+        <a href="#proyectos"   class="dot"         data-label="Proyectos" title="Proyectos"></a>
+        <a href="#contacto"    class="dot"         data-label="Contacto"  title="Contacto"></a>
+    </nav>
+
+    <main>
+
+        <!-- HERO -->
+        <section id="hero" data-dot="0">
+            <div class="hero-inner">
+
+                <!-- Texto -->
+                <div class="hero-content">
+                    <span class="eyebrow">Rosario, Argentina · UNR FCEYE</span>
+                    <h1 class="hero-title">
+                        Luca Franco<br>
+                        <span class="title-muted">Mengarelli.</span>
+                    </h1>
+
+                    <p class="hero-sub">
+                        Me apasiona la inteligencia artificial y el machine learning.
+                        Disfruto entender los datos, construir modelos y buscar la forma
+                        más limpia de explicar lo que muestran.
+                    </p>
+
+
+
+                    <div class="hero-cta">
+                        <a href="#proyectos" class="btn-primary">Ver proyectos</a>
+                        <a href="#contacto" class="btn-ghost">
+                            Contacto
+                            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="arrow-icon"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Computadora 3D -->
+                <div class="computer-col">
+                    <div class="scene" id="scene">
+                        <div class="computer-unit">
+                            <div class="face front">
+                                <div class="screen-inset">
+                                    <div class="crt">
+                                        <div class="crt-glow">
+                                            <div class="crt-ui">
+                                                <div class="crt-sidebar">
+                                                    <div class="icon-list">
+                                                        <div><span class="icon-dot blue"></span> RStudio</div>
+                                                        <div><span class="icon-dot orange"></span> Datos</div>
+                                                        <div><span class="icon-dot"></span> Modelos</div>
+                                                        <div><span class="icon-dot"></span> Plots</div>
+                                                    </div>
+                                                </div>
+                                                <div class="crt-main">
+                                                    <div class="crt-label">R 4.4.0</div>
+                                                    <div class="crt-window">
+                                                        <div class="crt-window-header">
+                                                            <span>analysis.Rmd</span>
+                                                            <span>[x]</span>
+                                                        </div>
+                                                        <div class="typing-container">
+                                                            <span id="typewriter"></span><span class="cursor"></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="floppy-slot"></div>
+                                <div class="logo-badge"></div>
+                                <div class="grill">
+                                    <div class="vent"></div><div class="vent"></div>
+                                    <div class="vent"></div><div class="vent"></div>
+                                    <div class="vent"></div><div class="vent"></div>
+                                    <div class="vent"></div><div class="vent"></div>
+                                </div>
+                            </div>
+                            <div class="face back"></div>
+                            <div class="face left"></div>
+                            <div class="face right"></div>
+                            <div class="face top"></div>
+                            <div class="face bottom"></div>
+                            <div class="keyboard-assembly">
+                                <div class="kb-base">
+                                    <div class="keys-grid">
+                                        <div class="key"></div><div class="key"></div><div class="key"></div><div class="key"></div>
+                                        <div class="key"></div><div class="key"></div><div class="key"></div><div class="key"></div>
+                                        <div class="key"></div><div class="key"></div><div class="key"></div><div class="key"></div>
+                                        <div class="key wide"></div><div class="key"></div><div class="key"></div><div class="key"></div>
+                                        <div class="key"></div><div class="key"></div><div class="key"></div><div class="key"></div>
+                                        <div class="key wide"></div>
+                                        <div class="key"></div><div class="key"></div><div class="key space"></div>
+                                        <div class="key"></div><div class="key"></div><div class="key"></div>
+                                    </div>
+                                </div>
+                                <div class="kb-front"></div>
+                                <div class="kb-back"></div>
+                                <div class="kb-left"></div>
+                                <div class="kb-right"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Flecha scroll -->
+            <div class="scroll-hint" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
+            </div>
+        </section>
+
+        <!-- STACK & FORMACIÓN -->
+        <section id="habilidades" data-dot="1">
+            <div class="container">
+                <div class="skills-layout">
+                    
+                    <!-- Left Column: Intro & Education -->
+                    <div class="skills-left">
+                        <p class="section-label">Formación</p>
+                        <h2 class="edu-title">Licenciatura en<br>Ciencia de Datos</h2>
+                        <p class="edu-sub">Universidad Nacional de Rosario · FCEyE</p>
+                        <p class="edu-year" style="margin-bottom: 1.5rem;">2026 &ndash; presente &nbsp;·&nbsp; <span id="academic-year"></span></p>
+                        
+                        <p class="edu-body">
+                            Carrera orientada al análisis estadístico, modelado predictivo y visualización de información. Me interesa especialmente la intersección entre la estadística y las técnicas modernas de machine learning.
+                        </p>
+                        
+                        <div class="edu-tags" style="margin-top: 1.5rem;">
+                            <span class="etag">Estadística</span>
+                            <span class="etag">Álgebra lineal</span>
+                            <span class="etag">Programación</span>
+                            <span class="etag">Análisis de datos</span>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Grid for Stack & Certs -->
+                    <div class="skills-right">
+                        
+                        <p class="section-label">Stack Técnico</p>
+                        <div class="tech-grid">
+                            <div class="tech-card">
+                                <h4 class="tech-card-title">Lenguajes</h4>
+                                <ul class="tech-list">
+                                    <li>R & R Markdown</li>
+                                    <li>Python <span class="skill-note">(básico)</span></li>
+                                    <li>Bash / Shell</li>
+                                </ul>
+                            </div>
+                            <div class="tech-card">
+                                <h4 class="tech-card-title">Herramientas</h4>
+                                <ul class="tech-list">
+                                    <li>Git & GitHub</li>
+                                    <li>RStudio</li>
+                                    <li>Linux</li>
+                                    <li>Tidyverse</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="section-divider" style="margin: 2.5rem 0;"></div>
+
+                        <p class="section-label">Idiomas & Certificaciones</p>
+                        
+                        <div class="lang-highlight-card">
+                            <h3 class="lang-title">Inglés Bilingüe (C2)</h3>
+                            <p class="lang-desc">C2 Proficiency (CPE) · Cambridge Assessment English</p>
+                        </div>
+
+                        <div class="comp-grid" style="margin-top: 2rem;">
+                            <div class="comp-card">
+                                <h4 class="tech-card-title">Otros Idiomas</h4>
+                                <ul class="tech-list">
+                                    <li>
+                                        <strong>Italiano (A2)</strong>
+                                        <span class="comp-sub">En aprendizaje</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="comp-card">
+                                <h4 class="tech-card-title">Cursos Complementarios</h4>
+                                <ul class="tech-list">
+                                    <li>
+                                        <strong>Data Analytics</strong>
+                                        <span class="comp-sub">
+                                            Google · Coursera, 2025<br>
+                                            <a href="https://coursera.org/share/5573ee794b9a70834b6733400abf4397" target="_blank" rel="noopener" class="cert-link">Ver certificado ↗</a>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <strong>AI Essentials</strong>
+                                        <span class="comp-sub">
+                                            Google · Coursera, 2025<br>
+                                            <a href="https://coursera.org/share/f56116a75de64e434964878fffa31ece" target="_blank" rel="noopener" class="cert-link">Ver certificado ↗</a>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROYECTOS -->
+        <section id="proyectos" data-dot="2">
+            <div class="container">
+                <p class="section-label">Proyectos</p>
+
+                <!-- Proyecto 1 (Augur) -->
+                <div class="project-block">
+                    <div class="project-info">
+                        <div class="project-meta-row">
+                            <span class="project-year">2026</span>
+                            <span class="project-type">Data Analytics · Automation</span>
+                        </div>
+                        <h3 class="project-title">Augur</h3>
+                        <p class="project-desc">
+                            Índice cuantitativo determinístico diseñado para calcular matemáticamente la viabilidad de reelección presidencial en Argentina en base a 8 dimensiones macroeconómicas.
+                        </p>
+                        <p class="project-detail">
+                            Pipeline "end-to-end" completamente automatizado. Extrae diariamente datos en vivo mediante APIs oficiales (INDEC, BCRA, UTDT), aplica un algoritmo de scoring determinístico sobre vectores económicos (Salario Real, IVS, Inflación, etc.), y actualiza dinámicamente un dashboard analítico y el repositorio vía GitHub Actions.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Streamlit</span>
+                            <span class="tag">CI/CD</span>
+                            <span class="tag">Web Scraping</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/lfmen/Augur" target="_blank" rel="noopener" class="link-underline">
+                                Ver en GitHub
+                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                            </a>
+                            <a href="https://lfmen.github.io/Augur/" target="_blank" rel="noopener" class="link-underline" style="margin-left: 15px;">
+                                Ver página web
+                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-number" aria-hidden="true">01</div>
+                </div>
+
+                <div class="project-divider"></div>
+
+                <!-- Proyecto 2 (ProyectoIso) -->
+                <div class="project-block">
+                    <div class="project-info">
+                        <div class="project-meta-row">
+                            <span class="project-year">2026</span>
+                            <span class="project-type">Data Science · Analytics</span>
+                        </div>
+                        <h3 class="project-title">ProyectoIso</h3>
+                        <p class="project-desc">
+                            Motor de analítica automatizada y toma de decisiones para la gestión deportiva del Club Atlético Independiente.
+                        </p>
+                        <p class="project-detail">
+                            Pipeline que integra web scraping y automatización para el procesamiento de datos deportivos, permitiendo extraer insights valiosos para apoyar el rendimiento y la toma de decisiones en el club.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Data Science</span>
+                            <span class="tag">Web Scraping</span>
+                            <span class="tag">Automation</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/lfmen/ProyectoIso" target="_blank" rel="noopener" class="link-underline">
+                                Ver en GitHub
+                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-number" aria-hidden="true">02</div>
+                </div>
+
+                <div class="project-divider"></div>
+
+                <!-- Proyecto 3 -->
+                <div class="project-block">
+                    <div class="project-info">
+                        <div class="project-meta-row">
+                            <span class="project-year">2026</span>
+                            <span class="project-type">Open source · herramienta</span>
+                        </div>
+                        <h3 class="project-title">TheftDeterrent</h3>
+                        <p class="project-desc">
+                            Instalador automatizado para ejecutar el software antirrobo del Plan Juana Manso / Conectar Igualdad en distribuciones Linux modernas. Resuelve incompatibilidades de dependencias que inutilizaban el software en sistemas actuales.
+                        </p>
+                        <p class="project-detail">
+                            El proyecto nació de la necesidad concreta: el software oficial no corría en ninguna distro moderna. La solución consistió en reempaquetar las dependencias con versiones compatibles y automatizar la instalación con un script Bash.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Bash</span>
+                            <span class="tag">Linux</span>
+                            <span class="tag">Packaging</span>
+                            <span class="tag">Dependencias</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/lfmen/TheftDeterrent" target="_blank" rel="noopener" class="link-underline">
+                                Ver en GitHub
+                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-number" aria-hidden="true">03</div>
+                </div>
+
+                <div class="project-divider"></div>
+
+                <div class="academic-projects-wrapper" style="margin-top: 4rem;">
+                    <p class="section-label">Proyectos Académicos</p>
+                    <div class="academic-grid">
+                        
+                        <!-- Proyecto 3 -->
+                        <div class="academic-card">
+                            <div class="project-meta-row">
+                                <span class="project-year">2026</span>
+                                <span class="project-type">Juego interactivo</span>
+                            </div>
+                            <h4 class="academic-title">Farkle TP</h4>
+                            <p class="academic-desc">
+                                Trabajo Práctico de Programación 1 (UNR). Implementación interactiva por consola del clásico juego de dados Farkle desarrollado en R.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">R</span>
+                                <span class="tag">Lógica</span>
+                                <span class="tag">Académico</span>
+                            </div>
+                            <div class="project-links mt-auto">
+                                <a href="https://github.com/lfmen/FarkleTP" target="_blank" rel="noopener" class="link-underline">
+                                    Ver en GitHub
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Proyecto 4 -->
+                        <div class="academic-card">
+                            <div class="project-meta-row">
+                                <span class="project-year">2026</span>
+                                <span class="project-type">Análisis de Datos</span>
+                            </div>
+                            <h4 class="academic-title">Análisis Exploratorio: F1</h4>
+                            <p class="academic-desc">
+                                Trabajo Práctico de Laboratorio de Datos 1 (UNR). Análisis estadístico sobre resultados históricos de la Fórmula 1 implementando Tidyverse.
+                            </p>
+                            <div class="project-tags">
+                                <span class="tag">R</span>
+                                <span class="tag">Data Analysis</span>
+                                <span class="tag">ggplot2</span>
+                            </div>
+                            <div class="project-links mt-auto">
+                                <a href="https://github.com/lfmen/AEDFormula1" target="_blank" rel="noopener" class="link-underline">
+                                    Ver en GitHub
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CONTACTO -->
+        <section id="contacto" data-dot="3">
+            <div class="container">
+                <p class="section-label">Contacto</p>
+                <a href="mailto:lucafrancomengarelli@gmail.com" class="contact-email">
+                    lucafrancomengarelli@gmail.com
+                </a>
+                <div class="divider"></div>
+
+                <footer class="site-footer">
+                    <div class="footer-social">
+                        <p class="footer-label">En la red</p>
+                        <div class="footer-links">
+                            <a href="https://github.com/lfmen" target="_blank" rel="noopener">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;margin-right:4px"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                                GitHub
+                            </a>
+                            <a href="https://www.linkedin.com/in/lucamengarelli-/" target="_blank" rel="noopener">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:middle;margin-right:4px"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                                LinkedIn
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer-right">
+                        <p class="footer-year">Portfolio <span id="current-year"></span></p>
+                    </div>
+                </footer>
+            </div>
+        </section>
+
+    </main>
+
+    <script>
+    // ── Barra de progreso de scroll ──────────────────────────────
+    const bar = document.getElementById('progress-bar');
+    window.addEventListener('scroll', () => {
+        const pct = window.scrollY / (document.body.scrollHeight - window.innerHeight) * 100;
+        bar.style.width = Math.min(pct, 100) + '%';
+    }, { passive: true });
+
+    const startYear = 2026;
+    const currentYear = new Date().getFullYear();
+    const yearOfStudy = (currentYear - startYear) + 1;
+    document.getElementById('academic-year').textContent = yearOfStudy + '.° año';
+    document.getElementById('current-year').textContent = currentYear;
+
+    // Intersection Observer para barra superior
+    const sections = document.querySelectorAll('section[data-dot]');
+    const dots     = document.querySelectorAll('#section-dots .dot');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    const io = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const idx = entry.target.dataset.dot;
+                dots.forEach((d, i) => d.classList.toggle('active', i == idx));
+                // Highlight nav link
+                navLinks.forEach(l => l.classList.remove('active'));
+                const id = entry.target.id;
+                const match = document.querySelector(`.nav-link[data-section="${id}"]`);
+                if (match) match.classList.add('active');
+            }
+        });
+    }, { threshold: 0.4 });
+    sections.forEach(s => io.observe(s));
+
+    // ── Typewriter en pantalla CRT ────────────────────────────────
+    const lines = [
+        'library(tidyverse)',
+        'df <- read_csv("data.csv")',
+        'glimpse(df)',
+        'ggplot(df, aes(x, y)) +',
+        '  geom_point(alpha=.6) +',
+        '  theme_minimal()',
+    ];
+    let li = 0, ci = 0;
+    const tw = document.getElementById('typewriter');
+    function type() {
+        if (ci < lines[li].length) {
+            tw.textContent += lines[li][ci++];
+            setTimeout(type, 75 + Math.random() * 45);
+        } else {
+            setTimeout(() => {
+                tw.textContent += '\n';
+                li = (li + 1) % lines.length;
+                ci = 0;
+                if (li === 0) setTimeout(() => { tw.textContent = ''; type(); }, 2000);
+                else type();
+            }, 600);
+        }
+    }
+    window.addEventListener('load', type);
+
+    // ── Parallax en la computadora ────────────────────────────────
+    const scene = document.getElementById('scene');
+    document.addEventListener('mousemove', e => {
+        if (!scene) return;
+        const rx = ((e.clientY - window.innerHeight / 2) / window.innerHeight) * 7;
+        const ry = -((e.clientX - window.innerWidth  / 2) / window.innerWidth)  * 12;
+        scene.style.transform = `rotateY(${-15 + ry}deg) rotateX(${5 + rx}deg)`;
+    });
+    // Parallax scene listener remains
+
+    </script>
+</body>
+</html>
