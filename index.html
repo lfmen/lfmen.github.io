@@ -414,21 +414,83 @@
     ];
     let li = 0, ci = 0;
     const tw = document.getElementById('typewriter');
+    let typingTimeout;
+    let easterEggActive = false;
+
     function type() {
+        if (easterEggActive) return;
         if (ci < lines[li].length) {
             tw.textContent += lines[li][ci++];
-            setTimeout(type, 75 + Math.random() * 45);
+            typingTimeout = setTimeout(type, 75 + Math.random() * 45);
         } else {
-            setTimeout(() => {
+            typingTimeout = setTimeout(() => {
+                if (easterEggActive) return;
                 tw.textContent += '\n';
                 li = (li + 1) % lines.length;
                 ci = 0;
-                if (li === 0) setTimeout(() => { tw.textContent = ''; type(); }, 2000);
-                else type();
+                if (li === 0) {
+                    typingTimeout = setTimeout(() => { 
+                        if (!easterEggActive) { tw.textContent = ''; type(); } 
+                    }, 2000);
+                } else {
+                    type();
+                }
             }, 600);
         }
     }
     window.addEventListener('load', type);
+
+    // ── Easter Egg Antigravity ────────────────────────────────
+    const floppySlot = document.querySelector('.floppy-slot');
+    if (floppySlot) {
+        floppySlot.addEventListener('click', () => {
+            if (easterEggActive) return;
+            easterEggActive = true;
+            clearTimeout(typingTimeout);
+            tw.textContent = '';
+            
+            const eggLines = [
+                '> import antigravity',
+                'Loading module...',
+                'Status: OK',
+                ' ',
+                '      |      ',
+                '     / \\     ',
+                '    / _ \\    ',
+                '   |.o \'.|   ',
+                '   |\'._\'.|   ',
+                '   |     |   ',
+                '  ,\'...\'.  ',
+                '   \\"""/   ',
+                '    \'-\'    '
+            ];
+            
+            let eli = 0, eci = 0;
+            function typeEgg() {
+                if (eci < eggLines[eli].length) {
+                    tw.textContent += eggLines[eli][eci++];
+                    setTimeout(typeEgg, 15);
+                } else {
+                    setTimeout(() => {
+                        tw.textContent += '\n';
+                        eli++;
+                        eci = 0;
+                        if (eli < eggLines.length) {
+                            typeEgg();
+                        } else {
+                            setTimeout(() => {
+                                easterEggActive = false;
+                                tw.textContent = '';
+                                li = 0; ci = 0;
+                                type();
+                            }, 4000);
+                        }
+                    }, 100);
+                }
+            }
+            typeEgg();
+        });
+    }
 
     // ── Parallax en la computadora ────────────────────────────────
     const scene = document.getElementById('scene');

@@ -309,6 +309,12 @@ ul { list-style: none; }
     width: 110px; height: 9px; background: #333;
     border-radius: 4px; box-shadow: inset 2px 2px 5px rgba(0,0,0,.5);
     margin-left: 70px;
+    cursor: pointer;
+    transition: background 0.3s, box-shadow 0.3s;
+}
+.floppy-slot:hover {
+    background: #444;
+    box-shadow: inset 2px 2px 5px rgba(0,0,0,.5), 0 0 5px rgba(255,255,255,0.2);
 }
 .logo-badge {
     position: absolute; bottom: 22px; left: 22px;
