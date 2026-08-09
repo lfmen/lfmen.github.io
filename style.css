@@ -446,29 +446,12 @@ ul { list-style: none; }
 .tech-list li strong { font-weight: 400; color: var(--s900); }
 .tech-list li:last-child { border-bottom: none; }
 .tech-list li.highlight-li {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.005));
-    padding: 0.85rem 1.1rem;
-    border: 1px solid var(--s200);
-    border-left: 3px solid var(--s600);
-    border-radius: 6px;
-    margin-bottom: 0.4rem;
-    margin-top: 0.2rem;
+    /* Mantenemos el padding por defecto pero le damos más énfasis al texto */
+    padding: .5rem 0;
 }
 .tech-list li.highlight-li strong {
-    font-size: .95rem;
+    font-weight: 500;
     color: var(--s950);
-}
-.lang-highlight-card {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.01));
-    border: 1px solid var(--s200);
-    border-radius: 8px;
-    padding: 1.25rem 1.5rem;
-    position: relative;
-    overflow: hidden;
-}
-.lang-highlight-card::before {
-    content: ''; position: absolute; top: 0; left: 0; width: 4px; height: 100%;
-    background: var(--s600);
 }
 .lang-title {
     font-size: 1.15rem; font-weight: 400; color: var(--s950);
