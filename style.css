@@ -114,6 +114,29 @@ ul { list-style: none; }
 .nav-links a:hover::after,
 .nav-links a.active::after { width: 100%; }
 .nav-links a.active { color: var(--s900); }
+
+/* Switcher Idioma */
+.lang-btn {
+    background: transparent;
+    border: 1px solid var(--s300);
+    color: var(--s500);
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: color 0.15s, border-color 0.15s, background 0.15s;
+    font-family: inherit;
+    letter-spacing: 0.05em;
+    display: inline-flex;
+    align-items: center;
+}
+.lang-btn:hover {
+    color: var(--s900);
+    border-color: var(--s600);
+    background: rgba(255, 255, 255, 0.05);
+}
+
 @media (max-width: 640px) { .nav-links { display: none; } }
 
 /* ============================================================

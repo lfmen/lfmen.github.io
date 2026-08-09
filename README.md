@@ -8,7 +8,8 @@ Podés ver la web funcionando acá: [lfmen.github.io](https://lfmen.github.io)
 
 Para armar el sitio decidí usar **HTML5 y CSS3 puro**, sin depender de librerías externas o frameworks de JavaScript. Hice esto con la idea de mantener todo simple, liviano y rápido:
 
-- **Rendimiento:** Al no tener que cargar archivos de JavaScript pesados, la página carga al instante.
+- **Rendimiento:** Al no tener que cargar dependencias pesadas, la página carga al instante.
+- **Bilingüe:** Incorpora soporte nativo (i18n en Vanilla JS) para inglés y español, con detección automática según el navegador.
 - **Mantenibilidad:** El código es fácil de entender y de mantener, sin depender de actualizaciones de herramientas externas.
 - **Hecho a medida:** Los detalles visuales y las animaciones las fui armando y ajustando desde cero a nivel nativo.
 
