@@ -169,30 +169,6 @@
   }
   .chev::after { content: "\00a0\203A"; }
 
-  .highlights {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px 40px;
-    margin: 0 0 36px;
-    padding: 0;
-  }
-  .highlights li {
-    padding-left: 14px;
-    border-left: 2px solid var(--line);
-  }
-  .highlights li.key { border-left-color: var(--link); }
-  .hl-title {
-    display: block;
-    font-size: 17px;
-    font-weight: 600;
-  }
-  .hl-sub {
-    display: block;
-    font-size: 14px;
-    color: var(--tertiary);
-  }
-
   /* ---------- Sections ---------- */
   section {
     padding: 80px 0;
@@ -352,7 +328,7 @@
     :root, :root[data-theme], :root:not([data-theme="light"]) { --bg: #fff; --surface: #fff; --text: #000; --secondary: #333; --tertiary: #555; --line: #ccc; --link: #000; color-scheme: light; }
     body { font-size: 10pt; letter-spacing: 0; }
     .wrap { padding: 0; max-width: none; }
-    nav, .hero .actions, .highlights, .section-sub, footer, .card .links { display: none; }
+    nav, .hero .actions, .section-sub, footer, .card .links { display: none; }
     .print-only { display: block; }
     .hero { padding: 0 0 12pt; }
     .eyebrow { font-size: 10pt; margin-bottom: 2pt; }
@@ -404,11 +380,6 @@
       y los <strong>modelos de lenguaje</strong>, y cómo aplicarlos a datos reales, en particular
       del deporte y la economía.
     </p>
-    <ul class="highlights">
-      <li class="key"><span class="hl-title">Inglés C2 certificado</span><span class="hl-sub">Cambridge English &middot; CPE</span></li>
-      <li><span class="hl-title">Abanderado nacional</span><span class="hl-sub">Mejor promedio de la institución</span></li>
-      <li><span class="hl-title">Premio Santander 2025</span><span class="hl-sub">Alumno secundario destacado</span></li>
-    </ul>
     <div class="actions">
       <a class="chev" href="cv/Luca-Franco-Mengarelli-CV.pdf" target="_blank" rel="noopener">Descargar CV</a>
       <a class="chev" href="https://github.com/lfmen" target="_blank" rel="noopener">GitHub</a>
@@ -443,11 +414,6 @@
         <div class="meta">Análisis de datos &middot; 2026</div>
         <h3>Análisis exploratorio de la Fórmula 1</h3>
         <p>Proyecto integrador de Laboratorio de Datos 1 (UNR). Integración de cuatro bases relacionales de carreras, pilotos, constructores y resultados en un único conjunto de datos, con limpieza, análisis univariado y bivariado.</p>
-        <ul>
-          <li>Impacto de las precipitaciones en la duración total de la carrera.</li>
-          <li>Tasa de abandonos frente a condiciones climáticas adversas.</li>
-          <li>Correlación entre la posición de largada y la posición final.</li>
-        </ul>
         <div class="stack">R &middot; dplyr &middot; tidyr &middot; ggplot2 &middot; R Markdown</div>
         <div class="links">
           <a class="chev" href="https://github.com/lfmen/aedformula1" target="_blank" rel="noopener">Código</a>
