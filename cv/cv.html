@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Luca Franco Mengarelli - CV</title>
+<meta name="author" content="Luca Franco Mengarelli">
+<!-- Fuente del CV en PDF (una página, apto ATS). Para regenerarlo: python cv/build.py -->
+<style>
+  /* Inter estática (no variable) para que el PDF use fuentes TrueType legibles por los ATS */
+  @font-face {
+    font-family: "Inter CV";
+    src: url("fonts/inter-latin-400-normal.woff2") format("woff2");
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: "Inter CV";
+    src: url("fonts/inter-latin-600-normal.woff2") format("woff2");
+    font-weight: 600;
+  }
+
+  :root {
+    --text: #1d1d1f;
+    --secondary: #6e6e73;
+    --tertiary: #86868b;
+    --line: #d2d2d7;
+    --link: #0066cc;
+  }
+
+  @page { size: A4; margin: 12mm 15mm 10mm; }
+
+  * { box-sizing: border-box; }
+
+  html, body { margin: 0; background: #fff; }
+
+  body {
+    color: var(--text);
+    font-family: "Inter CV", "Helvetica Neue", Arial, sans-serif;
+    font-size: 9pt;
+    line-height: 1.34;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  a { color: var(--link); text-decoration: none; }
+
+  /* ---------- Encabezado ---------- */
+  header { margin-bottom: 7pt; }
+  .eyebrow {
+    font-size: 9pt;
+    font-weight: 600;
+    color: var(--secondary);
+    margin: 0 0 1pt;
+  }
+  h1 {
+    font-size: 23pt;
+    line-height: 1.1;
+    font-weight: 600;
+    letter-spacing: -0.025em;
+    margin: 0 0 4pt;
+  }
+  .contact {
+    font-size: 8.8pt;
+    color: var(--secondary);
+    margin: 0;
+  }
+  .sep { color: var(--tertiary); padding: 0 4pt; }
+
+  /* ---------- Secciones ---------- */
+  section {
+    border-top: 0.75pt solid var(--line);
+    padding: 4.5pt 0 5pt;
+  }
+  h2 {
+    font-size: 10.5pt;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    margin: 0 0 3pt;
+  }
+  .summary { margin: 0; color: var(--secondary); }
+  .summary strong { color: var(--text); font-weight: 600; }
+
+  .item + .item { margin-top: 3.5pt; }
+  .item-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12pt;
+  }
+  .item-title { font-weight: 600; }
+  .item-title .sub { font-weight: 400; color: var(--secondary); }
+  .item-date {
+    font-size: 8.6pt;
+    color: var(--tertiary);
+    white-space: nowrap;
+    font-variant-numeric: tabular-nums;
+  }
+  .item-org { color: var(--secondary); font-size: 8.7pt; }
+  .item-body { color: var(--secondary); margin: 1pt 0 0; }
+  .item-body .stack { color: var(--tertiary); }
+  ul {
+    list-style: none;
+    color: var(--secondary);
+    margin: 1.5pt 0 0;
+    padding: 0;
+  }
+  /* Viñeta en el flujo normal (sin posicionar) para que el orden de lectura del PDF sea el visual */
+  li { padding-left: 10pt; text-indent: -10pt; }
+  li::before {
+    content: "•";
+    display: inline-block;
+    width: 10pt;
+    text-indent: 0;
+    color: var(--tertiary);
+  }
+
+  .kv {
+    display: grid;
+    grid-template-columns: 62pt 1fr;
+    gap: 1pt 10pt;
+    margin: 0;
+  }
+  .kv dt { color: var(--tertiary); }
+  .kv dd { margin: 0; }
+  .kv strong { font-weight: 600; }
+</style>
+</head>
+<body>
+
+<header>
+  <p class="eyebrow">Estadística y Ciencia de Datos · Universidad Nacional de Rosario</p>
+  <h1>Luca Franco Mengarelli</h1>
+  <p class="contact">Rosario, Santa Fe, Argentina<span class="sep">·</span><a href="mailto:lucafrancomengarelli@gmail.com">lucafrancomengarelli@gmail.com</a><span class="sep">·</span><a href="https://lfmen.github.io">lfmen.github.io</a><span class="sep">·</span><a href="https://github.com/lfmen">github.com/lfmen</a></p>
+</header>
+
+<section>
+  <h2>Perfil</h2>
+  <p class="summary">Estudiante de Estadística y Ciencia de Datos (UNR) interesado en inteligencia artificial, aprendizaje automático y modelos de lenguaje aplicados a datos reales. <strong>Inglés C2 certificado (Cambridge CPE).</strong> Abanderado de la Bandera Nacional por el mejor promedio de la institución.</p>
+</section>
+
+<section>
+  <h2>Educación</h2>
+  <div class="item">
+    <div class="item-head">
+      <span class="item-title">Estadística y Ciencia de Datos</span>
+      <span class="item-date">2026 – presente</span>
+    </div>
+    <div class="item-org">Facultad de Ciencias Económicas y Estadística, UNR · Orientación en la Licenciatura en Ciencia de Datos</div>
+  </div>
+  <div class="item">
+    <div class="item-head">
+      <span class="item-title">Bachiller en Ciencias Naturales</span>
+      <span class="item-date">2025</span>
+    </div>
+    <div class="item-org">Educación secundaria · Egresado con el mejor promedio de la institución</div>
+  </div>
+</section>
+
+<section>
+  <h2>Experiencia</h2>
+  <div class="item">
+    <div class="item-head">
+      <span class="item-title">Pasante contable</span>
+      <span class="item-date">2025</span>
+    </div>
+    <div class="item-org">Centro Económico de Cañada de Gómez · Cañada de Gómez, Santa Fe</div>
+    <ul>
+      <li>Soporte administrativo-contable en Tango Gestión (ERP): registros financieros e informes de gestión.</li>
+      <li>Digitalización de procesos internos: menos carga manual y recuperación de documentos más eficiente.</li>
+      <li>Experiencia práctica en administración y flujos financieros de una asociación económica profesional.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>Proyectos</h2>
+  <div class="item">
+    <div class="item-head">
+      <span class="item-title">TheftDeterrent <span class="sub">· Open source · <a href="https://github.com/lfmen/theftdeterrent">github.com/lfmen/theftdeterrent</a></span></span>
+      <span class="item-date">2026</span>
+    </div>
+    <p class="item-body">Instalador automatizado del software antirrobo de Conectar Igualdad / Plan Juana Manso para distribuciones Linux actuales, resolviendo dependencias obsoletas de Python 2. <span class="stack">Bash, Python, Linux, Debian packaging.</span></p>
+  </div>
+  <div class="item">
+    <div class="item-head">
+      <span class="item-title">Análisis exploratorio de la Fórmula 1 <span class="sub">· Laboratorio de Datos 1 · <a href="https://github.com/lfmen/aedformula1">github.com/lfmen/aedformula1</a></span></span>
+      <span class="item-date">2026</span>
+    </div>
+    <p class="item-body">Integración de cuatro bases relacionales, limpieza y análisis univariado y bivariado: lluvia y duración de la carrera, abandonos y relación entre posición de largada y final. <span class="stack">R, dplyr, tidyr, ggplot2, R Markdown.</span></p>
+  </div>
+  <div class="item">
+    <div class="item-head">
+      <span class="item-title">Farkle <span class="sub">· Programación 1 · <a href="https://github.com/lfmen/farkletp">github.com/lfmen/farkletp</a></span></span>
+      <span class="item-date">2026</span>
+    </div>
+    <p class="item-body">Juego de dados en consola, en equipo de tres: a mi cargo el programa principal, la detección de dados sin puntaje y la documentación. <span class="stack">R, Git.</span></p>
+  </div>
+</section>
+
+<section>
+  <h2>Distinciones</h2>
+  <div class="item">
+    <div class="item-head">
+      <span class="item-title">Abanderado de la Bandera Nacional por mérito académico</span>
+      <span class="item-date">2025</span>
+    </div>
+    <div class="item-org">Egresado con el mejor promedio de la institución · Bachiller en Ciencias Naturales</div>
+  </div>
+  <div class="item">
+    <div class="item-head">
+      <span class="item-title">Premio Nacional al Alumno Secundario Destacado</span>
+      <span class="item-date">2025</span>
+    </div>
+    <div class="item-org">Banco Santander Argentina · Santander Open Academy · Beca al rendimiento académico</div>
+  </div>
+</section>
+
+<section>
+  <h2>Idiomas</h2>
+  <dl class="kv">
+    <dt>Inglés</dt><dd><strong>C2 · Certificate of Proficiency in English (CPE), Cambridge English</strong></dd>
+    <dt>Español</dt><dd>Nativo</dd>
+    <dt>Italiano</dt><dd>A2</dd>
+  </dl>
+</section>
+
+<section>
+  <h2>Certificaciones y cursos</h2>
+  <div class="item">
+    <div class="item-head">
+      <span class="item-title">Google Data Analytics · Google AI Essentials <span class="sub">· Google, Coursera</span></span>
+      <span class="item-date">2025</span>
+    </div>
+  </div>
+  <div class="item">
+    <div class="item-head">
+      <span class="item-title">Inglés de negocios de nivel profesional <span class="sub">· Saylor Academy</span></span>
+      <span class="item-date">2025</span>
+    </div>
+    <div class="item-org">ESL005: Business-Proficient English as a Second Language · Redacción profesional de nivel C2 · Calificación 96 %</div>
+  </div>
+  <div class="item">
+    <div class="item-head">
+      <span class="item-title">Composición en inglés I <span class="sub">· Saylor Academy</span></span>
+      <span class="item-date">2025</span>
+    </div>
+    <div class="item-org">ENGL001: English Composition I · Escritura académica de nivel universitario, 32 horas · Calificación 86 %</div>
+  </div>
+</section>
+
+<section>
+  <h2>Habilidades</h2>
+  <dl class="kv">
+    <dt>Lenguajes</dt><dd>R, Python, Bash</dd>
+    <dt>Datos</dt><dd>Tidyverse (dplyr, tidyr, ggplot2), R Markdown</dd>
+    <dt>Herramientas</dt><dd>Git, GitHub, GitHub Actions, RStudio, Linux, Tango Gestión (ERP)</dd>
+    <dt>IA</dt><dd>Claude Code, Codex, Antigravity</dd>
+  </dl>
+</section>
+
+</body>
+</html>
