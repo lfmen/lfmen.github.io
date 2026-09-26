@@ -76,8 +76,6 @@
     padding: 0 22px;
   }
 
-  .print-only { display: none; }
-
   /* ---------- Nav ---------- */
   nav {
     position: sticky;
@@ -321,35 +319,6 @@
     .kv { grid-template-columns: 1fr; gap: 2px; }
     .kv dd { margin-bottom: 10px; }
   }
-
-  /* ---------- Print / PDF ---------- */
-  @media print {
-    @page { size: A4; margin: 16mm 18mm; }
-    :root, :root[data-theme], :root:not([data-theme="light"]) { --bg: #fff; --surface: #fff; --text: #000; --secondary: #333; --tertiary: #555; --line: #ccc; --link: #000; color-scheme: light; }
-    body { font-size: 10pt; letter-spacing: 0; }
-    .wrap { padding: 0; max-width: none; }
-    nav, .hero .actions, .section-sub, footer, .card .links { display: none; }
-    .print-only { display: block; }
-    .hero { padding: 0 0 12pt; }
-    .eyebrow { font-size: 10pt; margin-bottom: 2pt; }
-    .hero h1 { font-size: 24pt; margin-bottom: 6pt; }
-    .lead { font-size: 10.5pt; max-width: none; margin-bottom: 6pt; }
-    .contact-line { font-size: 9.5pt; color: var(--secondary); margin: 0; }
-    section { padding: 10pt 0; }
-    .section-title { font-size: 13pt; margin-bottom: 8pt; }
-    .projects { grid-template-columns: 1fr; gap: 8pt; }
-    .card, .card.featured { padding: 0; border-radius: 0; break-inside: avoid; }
-    .card .meta { font-size: 8pt; margin-bottom: 2pt; }
-    .card h3, .card.featured h3 { font-size: 11pt; margin-bottom: 2pt; }
-    .card p { font-size: 10pt; margin-bottom: 2pt; }
-    .card ul { display: none; }
-    .stack { font-size: 9pt; margin-bottom: 0; }
-    .cv-block { grid-template-columns: 110pt 1fr; gap: 12pt; padding: 8pt 0; break-inside: avoid; }
-    .cv-block h3 { font-size: 10pt; }
-    .item + .item { margin-top: 8pt; }
-    .item-date, .item-org, .item-body, .item-list, .kv { font-size: 9.5pt; }
-    .kv { grid-template-columns: 90pt 1fr; gap: 3pt 10pt; }
-  }
 </style>
 </head>
 <body>
@@ -381,11 +350,9 @@
       del deporte y la economía.
     </p>
     <div class="actions">
-      <a class="chev" href="cv/Luca-Franco-Mengarelli-CV.pdf" target="_blank" rel="noopener">Descargar CV</a>
       <a class="chev" href="https://github.com/lfmen" target="_blank" rel="noopener">GitHub</a>
       <a class="chev" href="mailto:lucafrancomengarelli@gmail.com" target="_blank" rel="noopener">Email</a>
     </div>
-    <p class="print-only contact-line">lucafrancomengarelli@gmail.com &middot; github.com/lfmen &middot; Rosario, Argentina</p>
   </div>
 </header>
 
@@ -437,7 +404,7 @@
 <section id="cv">
   <div class="wrap">
     <h2 class="section-title">Curriculum Vitae</h2>
-    <p class="section-sub">Formación, experiencia, distinciones y habilidades. <a class="chev" href="cv/Luca-Franco-Mengarelli-CV.pdf" target="_blank" rel="noopener">Descargar en PDF</a></p>
+    <p class="section-sub">Formación, experiencia, distinciones y habilidades.</p>
 
     <div class="cv-block">
       <h3>Educación</h3>
