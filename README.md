@@ -7,7 +7,7 @@ Sitio personal de una sola pagina, sin dependencias ni build: HTML, CSS y JS nat
 - `assets/img/buho.jpg`: "Eagle-owl" de Brehms Tierleben (Alfred Brehm), dominio publico, via Wikimedia Commons.
 - `assets/img/pajaro.webp`, `serpiente.webp`, `ciervo.webp`: animales en punteado (halftone) de una tinta, tomados de la imagen de referencia.
 - `og.jpg`, `icon-512.png`, `apple-touch-icon.png`, `favicon-48.png`: vista previa al compartir el link y iconos.
-- `assets/img/pie.webp`: pie de pagina, montanas dibujadas con caracteres (ASCII) y el nombre encima.
+- `assets/img/montanas.webp`: pie de pagina, montanas en punteado (halftone) generadas por codigo, con el nombre encima.
 - `assets/fonts/`: Inter Tight (SIL OFL), autoalojada.
 - `certificados/`: certificados enlazados desde la seccion de CV de la web.
 
